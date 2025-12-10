@@ -65,8 +65,8 @@ export function Expertise() {
   ];
 
   const certifications = [
-    { name: "Android Associate Developer", year: "2022 - Present" },
-    { name: "Bachelor of Computer Science", year: "2011 - 2016" }
+    { name: "Android Developer - Dicoding Indonesia", year: "2019 - 2020" },
+    { name: "Bachelor of Information Technology - Universitas Pembangunan Nasional Veteran Yogyakarta", year: "2013 - 2017" }
   ];
 
   return (
