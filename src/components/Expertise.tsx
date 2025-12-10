@@ -1,36 +1,66 @@
-import { Code2, Smartphone, Database, Cpu, Palette, Rocket } from "lucide-react";
+import { Code2, Smartphone, Library, Layers, Rocket } from "lucide-react";
 
 export function Expertise() {
   const skills = [
     {
-      category: "Mobile Frameworks",
-      icon: Smartphone,
-      items: ["React Native", "Flutter", "Android Native", "iOS Native"]
-    },
-    {
-      category: "Languages",
+      category: "Programming Languages",
       icon: Code2,
-      items: ["JavaScript", "TypeScript", "Kotlin", "Swift", "Dart"]
+      items: [
+        "Kotlin (6+ years)",
+        "Java (4+ years)",
+        "JavaScript/TypeScript",
+        "Python",
+        "C++"
+      ]
     },
     {
-      category: "Backend & Database",
-      icon: Database,
-      items: ["Node.js", "Express", "Firebase", "MongoDB", "MySQL", "PostgreSQL"]
+      category: "Frameworks",
+      icon: Smartphone,
+      items: [
+        "Android Native",
+        "Flutter",
+        "React Native (bare or with Expo, EAS)",
+        "React.js, Vite, Next.js",
+        "XML or Android Jetpack Compose"
+      ]
     },
     {
-      category: "State Management",
-      icon: Cpu,
-      items: ["Redux", "MobX", "Context API", "Provider", "Riverpod"]
+      category: "Libraries",
+      icon: Library,
+      items: [
+        "Google Map SDK",
+        "Exoplayer SDK",
+        "Agora SDK",
+        "CIAM",
+        "Firebase",
+        "Supabase",
+        "Dagger2 / Hilt",
+        "Kotlin Coroutines",
+        "RxJava",
+        "Zustand",
+        "Reanimated"
+      ]
     },
     {
-      category: "UI/UX Tools",
-      icon: Palette,
-      items: ["Figma", "Adobe XD", "Material Design", "iOS HIG"]
+      category: "Architecture & Design Patterns",
+      icon: Layers,
+      items: [
+        "MVVM",
+        "MVI",
+        "MVP",
+        "Clean Code",
+        "Domain Driven Design"
+      ]
     },
     {
-      category: "DevOps & Tools",
+      category: "Release & Deployment",
       icon: Rocket,
-      items: ["Git", "CI/CD", "Docker", "AWS", "Google Cloud", "REST API", "GraphQL"]
+      items: [
+        "Docker",
+        "CI/CD (Jenkins, Github Actions, Fastlane)",
+        "Code Push (OTA updates)",
+        "MDM Enrollment"
+      ]
     }
   ];
 
