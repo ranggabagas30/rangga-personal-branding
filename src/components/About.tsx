@@ -1,28 +1,30 @@
 import { Brain, Zap, Target, Award } from "lucide-react";
 
 export function About() {
-  const highlights = [
-    {
-      icon: Brain,
-      title: "AI-Powered Development",
-      description: "Leveraging cutting-edge AI tools to enhance productivity and code quality"
-    },
-    {
-      icon: Zap,
-      title: "Performance First",
-      description: "Obsessed with creating lightning-fast, smooth user experiences"
-    },
-    {
-      icon: Target,
-      title: "Client-Focused",
-      description: "Dedicated to understanding and exceeding client expectations"
-    },
-    {
-      icon: Award,
-      title: "Craftsmanship",
-      description: "Never settling for good enough - always pursuing excellence"
-    }
-  ];
+  // TODO Hide highlights for now
+  // const highlights = [
+  //   {
+  //     icon: Brain,
+  //     title: "AI-Powered Development",
+  //     description: "Leveraging cutting-edge AI tools to enhance productivity and code quality"
+  //   },
+  //   {
+  //     icon: Zap,
+  //     title: "Performance First",
+  //     description: "Obsessed with creating lightning-fast, smooth user experiences"
+  //   },
+  //   {
+  //     icon: Target,
+  //     title: "Client-Focused",
+  //     description: "Dedicated to understanding and exceeding client expectations"
+  //   },
+  //   {
+  //     icon: Award,
+  //     title: "Craftsmanship",
+  //     description: "Never settling for good enough - always pursuing excellence"
+  //   }
+  // ];
+  const highlights = []
 
   return (
     <section id="about" className="relative py-24 px-4 sm:px-6 lg:px-8">
