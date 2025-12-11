@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles, Code2, Smartphone } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
@@ -62,19 +62,35 @@ export function Hero() {
           {/* Tech stack icons */}
           <div className="flex flex-wrap justify-center gap-6 pt-12 opacity-60">
             <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
-              <Code2 className="w-5 h-5 text-cyan-400" />
+              <img 
+                src="https://cdn.simpleicons.org/react/61DAFB" 
+                alt="React Native" 
+                className="w-5 h-5"
+              />
               <span className="text-gray-300">React Native</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
-              <Smartphone className="w-5 h-5 text-cyan-400" />
+              <img 
+                src="https://cdn.simpleicons.org/flutter/02569B" 
+                alt="Flutter" 
+                className="w-5 h-5"
+              />
               <span className="text-gray-300">Flutter</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
-              <Code2 className="w-5 h-5 text-cyan-400" />
+              <img 
+                src="https://cdn.simpleicons.org/android/3DDC84" 
+                alt="Android" 
+                className="w-5 h-5"
+              />
               <span className="text-gray-300">Android</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
-              <Smartphone className="w-5 h-5 text-cyan-400" />
+              <img 
+                src="https://cdn.simpleicons.org/apple/000000" 
+                alt="iOS" 
+                className="w-5 h-5"
+              />
               <span className="text-gray-300">iOS</span>
             </div>
           </div>
