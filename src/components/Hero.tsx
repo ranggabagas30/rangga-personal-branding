@@ -87,9 +87,28 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 pt-8">
-            <button className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl hover:shadow-2xl hover:shadow-cyan-500/50 transition-all">
+            <button 
+              onClick={() => {
+                const portfolioSection = document.getElementById('portfolio');
+                if (portfolioSection) {
+                  portfolioSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl hover:shadow-2xl hover:shadow-cyan-500/50 transition-all"
+            >
               View My Work
               <ArrowDownIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+            <button 
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="px-8 py-4 bg-muted/50 border border-border text-foreground rounded-xl hover:bg-muted transition-all backdrop-blur-sm"
+            >
+              Hire Me
             </button>
             <button 
               onClick={() => window.open('https://drive.google.com/file/d/1Qs_p91SU6_7qzuzRu63JAGNU95S8_HV0/view?usp=sharing', '_blank')}

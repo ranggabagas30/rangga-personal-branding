@@ -3,7 +3,12 @@ import { useTheme } from "next-themes";
 import { SunIcon, MoonIcon } from "./icons/UIcons";
 import { cn } from "./ui/utils";
 
-export function ThemeToggle() {
+interface ThemeToggleProps {
+  className?: string;
+  whiteMode?: boolean;
+}
+
+export function ThemeToggle({ className, whiteMode = false }: ThemeToggleProps) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -22,12 +27,12 @@ export function ThemeToggle() {
         aria-label="Toggle theme"
       >
         <div className="absolute left-1 z-10 flex h-6 w-6 items-center justify-center">
-          <SunIcon className="h-4 w-4 text-muted-foreground" />
+          <SunIcon className={cn("h-4 w-4", whiteMode ? "text-white" : "text-muted-foreground")} />
         </div>
         <div className="absolute right-1 z-10 flex h-6 w-6 items-center justify-center">
-          <MoonIcon className="h-4 w-4 text-muted-foreground opacity-50" />
+          <MoonIcon className={cn("h-4 w-4 opacity-50", whiteMode ? "text-white" : "text-muted-foreground")} />
         </div>
-        <div className="absolute left-0.5 h-6 w-6 rounded-full bg-card shadow-sm" />
+        <div className={cn("absolute left-0.5 h-6 w-6 rounded-full shadow-sm", whiteMode ? "bg-white/20" : "bg-card")} />
       </button>
     );
   }
@@ -57,7 +62,13 @@ export function ThemeToggle() {
         <SunIcon
           className={cn(
             "h-4 w-4 transition-colors duration-200",
-            isDark ? "text-primary-foreground opacity-50" : "text-foreground"
+            whiteMode
+              ? isDark
+                ? "text-white opacity-50"
+                : "text-white"
+              : isDark
+              ? "text-primary-foreground opacity-50"
+              : "text-foreground"
           )}
         />
       </div>
@@ -67,7 +78,13 @@ export function ThemeToggle() {
         <MoonIcon
           className={cn(
             "h-4 w-4 transition-colors duration-200",
-            isDark ? "text-primary-foreground" : "text-muted-foreground opacity-50"
+            whiteMode
+              ? isDark
+                ? "text-white"
+                : "text-white opacity-50"
+              : isDark
+              ? "text-primary-foreground"
+              : "text-muted-foreground opacity-50"
           )}
         />
       </div>
@@ -75,7 +92,8 @@ export function ThemeToggle() {
       {/* Sliding thumb that moves between icons */}
       <div
         className={cn(
-          "absolute h-6 w-6 rounded-full bg-card shadow-sm transition-transform duration-200 ease-in-out",
+          "absolute h-6 w-6 rounded-full shadow-sm transition-transform duration-200 ease-in-out",
+          whiteMode ? "bg-white/20" : "bg-card",
           isDark ? "translate-x-[calc(3.5rem-1.5rem-0.25rem)]" : "translate-x-0.5"
         )}
         aria-hidden="true"

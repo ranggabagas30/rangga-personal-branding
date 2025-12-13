@@ -42,9 +42,9 @@ export function About() {
           </p>
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 border border-cyan-500/30 rounded-full backdrop-blur-sm">
-            <SparklesIcon className="w-4 h-4 text-cyan-400" />
-            <span className="text-cyan-400 text-sm">Available for new opportunities</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 border border-cyan-500/30 rounded-full backdrop-blur-sm">
+            <SparklesIcon className="w-4 h-4 text-white" />
+            <span className="text-white text-sm">Available for new opportunities</span>
           </div>
         </div>        
 

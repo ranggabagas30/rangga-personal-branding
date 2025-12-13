@@ -22,7 +22,7 @@ export default function App() {
         <Expertise />
         {/* <WorkShowcase />         */}
         {/* <Journey /> */}
-        {/* <Contact /> */}
+        <Contact />
       </main>
     </div>
   );
