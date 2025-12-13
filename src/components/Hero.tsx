@@ -11,51 +11,51 @@ export function Hero() {
         <div className="text-center space-y-8 mt-16">        
           {/* Main heading */}
           <div className="space-y-2">
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl text-white pt-16">
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl text-foreground pt-16">
               Rangga Bagas
               <br />              
             </h1>
-            <h1 className="text-2xl sm:text-2xl lg:text-4xl text-gray-400">
+            <h1 className="text-2xl sm:text-2xl lg:text-4xl text-muted-foreground">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
                 Senior Mobile Engineer
               </span>
             </h1>
             {/* Tech stack icons */}
             <div className="flex flex-wrap justify-center gap-1">
-              <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
+              <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg backdrop-blur-sm border border-border">
                 <img 
                   src="https://cdn.simpleicons.org/react/61DAFB" 
                   alt="React Native" 
                   className="w-5 h-5"
                 />
-                <span className="text-gray-300">React Native</span>
+                <span className="text-muted-foreground">React Native</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
+              <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg backdrop-blur-sm border border-border">
                 <img 
                   src="https://cdn.simpleicons.org/flutter/02569B" 
                   alt="Flutter" 
                   className="w-5 h-5"
                 />
-                <span className="text-gray-300">Flutter</span>
+                <span className="text-muted-foreground">Flutter</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
+              <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg backdrop-blur-sm border border-border">
                 <img 
                   src="https://cdn.simpleicons.org/android/3DDC84" 
                   alt="Android" 
                   className="w-5 h-5"
                 />
-                <span className="text-gray-300">Android</span>
+                <span className="text-muted-foreground">Android</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
+              <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg backdrop-blur-sm border border-border">
                 <img 
                   src="https://cdn.simpleicons.org/apple/FFFFFF" 
                   alt="iOS" 
                   className="w-5 h-5"
                 />
-                <span className="text-gray-300">iOS</span>
+                <span className="text-muted-foreground">iOS</span>
               </div>
             </div>
-            <p className="text-xl sm:text-2xl text-gray-400 max-w-3xl pt-6">
+            <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl pt-6">
               Spent 
               <span className="text-cyan-400"> 7+ years</span> making applications that works.
             </p>
@@ -64,18 +64,18 @@ export function Hero() {
           {/* Stats */}
           {/* <div className="flex flex-wrap justify-center gap-8 pt-8">
             <div className="text-center">
-              <div className="text-4xl text-white mb-2">7+</div>
-              <div className="text-gray-400">Years Experience</div>
+              <div className="text-4xl text-foreground mb-2">7+</div>
+              <div className="text-muted-foreground">Years Experience</div>
             </div>
-            <div className="w-px bg-slate-800"></div>
+            <div className="w-px bg-border"></div>
             <div className="text-center">
-              <div className="text-4xl text-white mb-2">50+</div>
-              <div className="text-gray-400">Projects Delivered</div>
+              <div className="text-4xl text-foreground mb-2">50+</div>
+              <div className="text-muted-foreground">Projects Delivered</div>
             </div>
-            <div className="w-px bg-slate-800"></div>
+            <div className="w-px bg-border"></div>
             <div className="text-center">
-              <div className="text-4xl text-white mb-2">100%</div>
-              <div className="text-gray-400">Client Satisfaction</div>
+              <div className="text-4xl text-foreground mb-2">100%</div>
+              <div className="text-muted-foreground">Client Satisfaction</div>
             </div>
           </div> */}
 
@@ -87,7 +87,7 @@ export function Hero() {
             </button>
             <button 
               onClick={() => window.open('https://drive.google.com/file/d/1Qs_p91SU6_7qzuzRu63JAGNU95S8_HV0/view?usp=sharing', '_blank')}
-              className="px-8 py-4 bg-slate-800/50 border border-slate-700 text-white rounded-xl hover:bg-slate-800 transition-all backdrop-blur-sm"
+              className="px-8 py-4 bg-muted/50 border border-border text-foreground rounded-xl hover:bg-muted transition-all backdrop-blur-sm"
             >
               Download CV
             </button>

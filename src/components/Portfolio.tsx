@@ -53,17 +53,17 @@ export function Portfolio() {
     : portfolioItems.filter(item => item.category === activeFilter);
 
   return (
-    <section id="portfolio" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-slate-950/50">
+    <section id="portfolio" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-card/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-slate-800/50 border border-cyan-500/30 rounded-full mb-4">
+          <div className="inline-block px-4 py-2 bg-muted/50 border border-cyan-500/30 rounded-full mb-4">
             <span className="text-cyan-400">Portfolio</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl text-white mb-6">
+          <h2 className="text-4xl sm:text-5xl text-foreground mb-6">
             Selected
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> Works</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A showcase of mobile applications I've crafted with passion and precision
           </p>
         </div>
@@ -76,8 +76,8 @@ export function Portfolio() {
               onClick={() => setActiveFilter(filter)}
               className={`px-6 py-2 rounded-full transition-all ${
                 activeFilter === filter
-                  ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/30"
-                  : "bg-slate-800/50 border border-slate-700 text-gray-300 hover:border-cyan-500/50"
+                  ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-foreground shadow-lg shadow-cyan-500/30"
+                  : "bg-muted/50 border border-border text-muted-foreground hover:border-cyan-500/50"
               }`}
             >
               {filter}
@@ -90,10 +90,10 @@ export function Portfolio() {
           {filteredItems.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden bg-slate-900/50 border border-slate-800 rounded-2xl hover:border-cyan-500/50 transition-all hover:shadow-2xl hover:shadow-cyan-500/10"
+              className="group relative overflow-hidden bg-card/50 border border-border rounded-2xl hover:border-cyan-500/50 transition-all hover:shadow-2xl hover:shadow-cyan-500/10"
             >
               {item.featured && (
-                <div className="absolute top-4 right-4 z-10 px-3 py-1 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm rounded-full">
+                <div className="absolute top-4 right-4 z-10 px-3 py-1 bg-gradient-to-r from-cyan-500 to-blue-600 text-foreground text-sm rounded-full">
                   Featured
                 </div>
               )}
@@ -116,7 +116,7 @@ export function Portfolio() {
                       className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-colors"
                       title="Watch on YouTube"
                     >
-                      <YoutubeIcon className="w-5 h-5 text-white" />
+                      <YoutubeIcon className="w-5 h-5 text-foreground" />
                     </a>
                   )}
                   {item.websiteUrl && (
@@ -138,7 +138,7 @@ export function Portfolio() {
                       className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-colors"
                       title="View on App Store"
                     >
-                      <SmartphoneIcon className="w-5 h-5 text-white" />
+                      <SmartphoneIcon className="w-5 h-5 text-foreground" />
                     </a>
                   )}
                 </div>
@@ -146,10 +146,10 @@ export function Portfolio() {
 
               <div className="p-6">
                 <div className="mb-3">
-                  <h3 className="text-white text-xl mb-1">{item.title}</h3>
+                  <h3 className="text-foreground text-xl mb-1">{item.title}</h3>
                   <p className="text-cyan-400 text-sm">{item.role}</p>
                 </div>
-                <p className="text-gray-400 mb-4 text-sm leading-relaxed">{item.description}</p>
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{item.description}</p>
                 
                 {/* Links */}
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -158,7 +158,7 @@ export function Portfolio() {
                       href={item.websiteUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
+                      className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-border rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
                     >
                       <SimpleIcon icon="internetarchive" color="FFFFFF" className="w-3 h-3" />
                       Website
@@ -169,7 +169,7 @@ export function Portfolio() {
                       href={item.appStoreUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
+                      className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-border rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
                     >
                       <SmartphoneIcon className="w-3 h-3" />
                       App Store
@@ -180,7 +180,7 @@ export function Portfolio() {
                       href={item.playStoreUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
+                      className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-border rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
                     >
                       <SmartphoneIcon className="w-3 h-3" />
                       Google Play
@@ -191,7 +191,7 @@ export function Portfolio() {
                       href={item.youtubeUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
+                      className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-border rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
                     >
                       <YoutubeIcon className="w-3 h-3" />
                       YouTube
@@ -204,7 +204,7 @@ export function Portfolio() {
                   {item.tech.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="px-2 py-1 bg-slate-800 border border-slate-700 rounded text-cyan-400 text-xs"
+                      className="px-2 py-1 bg-slate-800 border border-border rounded text-cyan-400 text-xs"
                     >
                       {tech}
                     </span>

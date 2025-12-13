@@ -39,6 +39,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Background gradient variants for light theme */
+  --background-gradient-start: #f8fafc; /* slate-50 */
+  --background-gradient-mid: #f1f5f9;   /* slate-100 */
+  --background-gradient-end: #e2e8f0;   /* slate-200 */
+  --grid-pattern: #e2e8f0; /* slate-200 */
 }
 
 .dark {
@@ -76,6 +82,12 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+
+  /* Background gradient variants for dark theme */
+  --background-gradient-start: oklch(0.129 0.042 264.695); /* slate-950 */
+  --background-gradient-mid: oklch(0.208 0.042 265.755);   /* slate-900 */
+  --background-gradient-end: oklch(0.129 0.042 264.695);   /* slate-950 */
+  --grid-pattern: #1e293b; /* slate-800 */
 }
 
 @theme inline {
