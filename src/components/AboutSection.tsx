@@ -1,4 +1,4 @@
-import { Clock, Globe } from "lucide-react";
+import { ClockIcon, SimpleIcon } from "./icons/UIcons";
 
 export function AboutSection() {
   return (
@@ -10,7 +10,7 @@ export function AboutSection() {
           <span className="text-gray-500">2</span>
         </div>
         <div className="space-y-3 text-gray-700">
-          <p>Senior Mobile Engineer</p>
+          <p>Rangga Bagas</p>
           <p>7+ years of experience</p>
         </div>
       </div>
@@ -20,7 +20,7 @@ export function AboutSection() {
         <h3 className="text-gray-900 mb-3">Hours per week</h3>
         <div className="flex items-center justify-between">
           <span className="text-gray-700">As Needed - Open to Offers</span>
-          <Clock className="w-4 h-4 text-gray-400" />
+          <ClockIcon className="w-4 h-4 text-gray-400" />
         </div>
         <div className="mt-2">
           <span className="inline-block px-3 py-1 bg-gray-900 text-white rounded-full text-sm">
@@ -94,19 +94,19 @@ export function AboutSection() {
         <h3 className="text-gray-900 mb-3">Linked accounts</h3>
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-gray-700">
-            <Globe className="w-4 h-4" />
+            <SimpleIcon icon="internetarchive" color="000000" className="w-4 h-4" />
             <span>GitHub</span>
           </div>
           <div className="flex items-center gap-2 text-gray-700">
-            <Globe className="w-4 h-4" />
+            <SimpleIcon icon="internetarchive" color="000000" className="w-4 h-4" />
             <span>Stack Overflow</span>
           </div>
           <div className="flex items-center gap-2 text-gray-700">
-            <Globe className="w-4 h-4" />
+            <SimpleIcon icon="internetarchive" color="000000" className="w-4 h-4" />
             <span>LinkedIn</span>
           </div>
           <div className="flex items-center gap-2 text-gray-700">
-            <Globe className="w-4 h-4" />
+            <SimpleIcon icon="internetarchive" color="000000" className="w-4 h-4" />
             <span>Dribbble</span>
           </div>
         </div>

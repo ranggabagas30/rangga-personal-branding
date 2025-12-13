@@ -1,10 +1,10 @@
-import { Code2, Smartphone, Library, Layers, Rocket } from "lucide-react";
+import { Code2Icon, SmartphoneIcon, LibraryIcon, LayersIcon, RocketIcon } from "./icons/UIcons";
 
 export function Expertise() {
   const skills = [
     {
       category: "Programming Languages",
-      icon: Code2,
+      icon: Code2Icon,
       items: [
         "Kotlin (6+ years)",
         "Java (4+ years)",
@@ -15,7 +15,7 @@ export function Expertise() {
     },
     {
       category: "Frameworks",
-      icon: Smartphone,
+      icon: SmartphoneIcon,
       items: [
         "Android Native",
         "Flutter",
@@ -26,7 +26,7 @@ export function Expertise() {
     },
     {
       category: "Libraries",
-      icon: Library,
+      icon: LibraryIcon,
       items: [
         "Google Map SDK",
         "Exoplayer SDK",
@@ -43,7 +43,7 @@ export function Expertise() {
     },
     {
       category: "Architecture & Design Patterns",
-      icon: Layers,
+      icon: LayersIcon,
       items: [
         "MVVM",
         "MVI",
@@ -54,7 +54,7 @@ export function Expertise() {
     },
     {
       category: "Release & Deployment",
-      icon: Rocket,
+      icon: RocketIcon,
       items: [
         "Docker",
         "CI/CD (Jenkins, Github Actions, Fastlane)",
@@ -70,7 +70,7 @@ export function Expertise() {
   ];
 
   return (
-    <section id="expertise" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-slate-950/50">
+    <section id="expertise" className="relative py-16 px-4 sm:px-6 lg:px-8 bg-slate-950/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-slate-800/50 border border-cyan-500/30 rounded-full mb-4">

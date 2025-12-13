@@ -18,9 +18,9 @@ export default function App() {
       <main className="relative">
         <Hero />
         <About />
-        <Expertise />
-        <WorkShowcase />
         <Portfolio />
+        <Expertise />
+        {/* <WorkShowcase />         */}
         <Journey />
         <Contact />
       </main>

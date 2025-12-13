@@ -1,4 +1,4 @@
-import { MapPin, Star, Clock, CheckCircle2, MessageSquare } from "lucide-react";
+import { MapPinIcon, StarIcon, ClockIcon, CheckCircle2Icon, MessageSquareIcon } from "./icons/UIcons";
 
 export function Header() {
   return (
@@ -13,12 +13,12 @@ export function Header() {
             
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-gray-900">Rangga B.</h1>
-                <CheckCircle2 className="w-5 h-5 text-blue-600" />
+                <h1 className="text-gray-900">RB</h1>
+                <CheckCircle2Icon className="w-5 h-5 text-blue-600" />
               </div>
               
               <div className="flex items-center gap-2 text-gray-600 mt-1">
-                <MapPin className="w-4 h-4" />
+                <MapPinIcon className="w-4 h-4" />
                 <span>Jakarta, Indonesia - 8:18 am local time</span>
               </div>
               
@@ -35,7 +35,7 @@ export function Header() {
               <div className="text-gray-900">$35.00/hr</div>
             </div>
             <button className="flex items-center gap-2 px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
-              <MessageSquare className="w-4 h-4" />
+              <MessageSquareIcon className="w-4 h-4" />
               Hire Me
             </button>
           </div>

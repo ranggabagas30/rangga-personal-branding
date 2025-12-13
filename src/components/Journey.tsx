@@ -1,11 +1,11 @@
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { BriefcaseIcon, GraduationCapIcon, AwardIcon } from "./icons/UIcons";
 
 export function Journey() {
   const experience = [
     {
       type: "work",
       title: "Lead Android Developer",
-      company: "Atiqh-Labs",
+      company: "Aleph-Labs",
       location: "Finland (Remote)",
       period: "June 2022 - Present",
       description: "Leading mobile development initiatives using hybrid and native approaches. Architecting scalable solutions and mentoring junior developers.",
@@ -14,7 +14,7 @@ export function Journey() {
     {
       type: "work",
       title: "Senior Mobile Developer",
-      company: "Atiqh-Labs",
+      company: "Aleph-Labs",
       location: "Remote",
       period: "August 2020 - June 2022",
       description: "Developed high-performance mobile applications using React Native and Flutter. Implemented CI/CD pipelines and maintained 99.9% uptime.",
@@ -23,7 +23,7 @@ export function Journey() {
     {
       type: "work",
       title: "Senior Android Developer",
-      company: "Atiqh-Labs",
+      company: "Aleph-Labs",
       location: "Remote",
       period: "May 2017 - August 2020",
       description: "Built native Android applications with modern architectures. Collaborated with cross-functional teams to deliver exceptional user experiences.",
@@ -35,9 +35,9 @@ export function Journey() {
     {
       degree: "Bachelor of Engineering (B.Eng)",
       field: "Computer Science",
-      school: "Universitas Pamulang",
-      period: "2011 - 2016",
-      achievements: ["Focus on Software Engineering", "Mobile Development Research"]
+      school: "Universitas Pembangunan Nasional Veteran Yogyakarta",
+      period: "2013 - 2017",
+      achievements: [""]
     }
   ];
 
@@ -60,7 +60,7 @@ export function Journey() {
         {/* Experience Timeline */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-8">
-            <Briefcase className="w-6 h-6 text-cyan-400" />
+            <BriefcaseIcon className="w-6 h-6 text-cyan-400" />
             <h3 className="text-white text-2xl">Professional Experience</h3>
           </div>
 
@@ -107,7 +107,7 @@ export function Journey() {
           {/* Education */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <GraduationCap className="w-6 h-6 text-cyan-400" />
+              <GraduationCapIcon className="w-6 h-6 text-cyan-400" />
               <h3 className="text-white text-2xl">Education</h3>
             </div>
 
@@ -132,7 +132,7 @@ export function Journey() {
           {/* Certifications */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <Award className="w-6 h-6 text-cyan-400" />
+              <AwardIcon className="w-6 h-6 text-cyan-400" />
               <h3 className="text-white text-2xl">Certifications</h3>
             </div>
 
@@ -150,7 +150,7 @@ export function Journey() {
                 <p className="text-gray-500">2022 - Present</p>
               </div>
 
-              <div className="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+              {/* <div className="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
                 <h4 className="text-white mb-4">Additional Skills</h4>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
@@ -166,7 +166,7 @@ export function Journey() {
                     <span className="text-gray-300 text-sm">UI/UX Design Principles</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

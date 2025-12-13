@@ -1,5 +1,5 @@
-import { Star, ExternalLink, Calendar, DollarSign, MapPin, Users, Clock } from "lucide-react";
 import { useState } from "react";
+import { StarIcon, ExternalLinkIcon, CalendarIcon, DollarSignIcon, MapPinIcon, UsersIcon, ClockIcon } from "./icons/UIcons";
 
 interface Testimonial {
   rating: number;
@@ -41,7 +41,7 @@ export function WorkShowcase() {
       projectUrl: "https://footballmoney.us",
       testimonials: [
         {
-          rating: 5.0,
+      rating: 5.0,
           text: "Rangga is wonderful to work with and I would encourage every entrepreneur to find a way to work with him. Organized, on time, goes above and beyond and a very respectful person. 10/10",
           date: "Dec 4, 2024"
         },
@@ -52,7 +52,7 @@ export function WorkShowcase() {
         }
       ],
       clientInfo: {
-        rating: 5.0,
+      rating: 5.0,
         reviewCount: 14,
         location: "United States, Jersey City",
         totalSpent: "Over $10,000 total spent",
@@ -69,7 +69,7 @@ export function WorkShowcase() {
       jobDescription: "Ongoing maintenance and support for mobile applications. Includes bug fixes, performance optimizations, feature updates, and technical support.",
       testimonials: [
         {
-          rating: 5.0,
+      rating: 5.0,
           text: "Excellent work on maintaining our app. Rangga is responsive, professional, and always delivers on time. Highly recommended!",
         }
       ],
@@ -120,11 +120,11 @@ export function WorkShowcase() {
                   <h3 className="text-white text-2xl mb-3">{project.title}</h3>
                   <div className="flex flex-wrap items-center gap-4 text-sm">
                     <div className="flex items-center gap-2 text-gray-400">
-                      <Calendar className="w-4 h-4" />
+                      <CalendarIcon className="w-4 h-4" />
                       <span>{project.duration}</span>
                     </div>
                     <div className="flex items-center gap-2 text-cyan-400">
-                      <DollarSign className="w-4 h-4" />
+                      <DollarSignIcon className="w-4 h-4" />
                       <span>{project.earnings}</span>
                     </div>
                     <span className="text-gray-500">{project.paymentType}</span>
@@ -137,7 +137,7 @@ export function WorkShowcase() {
                     rel="noopener noreferrer"
                     className="p-2 bg-cyan-500/10 rounded-lg hover:bg-cyan-500/20 transition-colors"
                   >
-                    <ExternalLink className="w-5 h-5 text-cyan-400" />
+                    <ExternalLinkIcon className="w-5 h-5 text-cyan-400" />
                   </a>
                 )}
               </div>
@@ -147,7 +147,7 @@ export function WorkShowcase() {
                 <div className="lg:col-span-2 space-y-6">
                   <div>
                     <h4 className="text-white text-lg mb-4 flex items-center gap-2">
-                      <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                      <StarIcon className="w-5 h-5 text-yellow-400" filled />
                       <span>Client's Review</span>
                     </h4>
                     <div className="space-y-4">
@@ -158,9 +158,10 @@ export function WorkShowcase() {
                         >
                           <div className="flex items-center gap-2 mb-3">
                             {[...Array(5)].map((_, i) => (
-                              <Star
+                              <StarIcon
                                 key={i}
-                                className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                                className="w-4 h-4 text-yellow-400"
+                                filled
                               />
                             ))}
                             {testimonial.date && (
@@ -209,7 +210,7 @@ export function WorkShowcase() {
                     </div>
                     
                     <div className="flex items-start gap-2">
-                      <MapPin className="w-4 h-4 text-gray-400 mt-1 flex-shrink-0" />
+                      <MapPinIcon className="w-4 h-4 text-gray-400 mt-1 flex-shrink-0" />
                       <span className="text-gray-300 text-sm">{project.clientInfo.location}</span>
                     </div>
                     
@@ -218,7 +219,7 @@ export function WorkShowcase() {
                     </div>
                     
                     <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-gray-400" />
+                      <UsersIcon className="w-4 h-4 text-gray-400" />
                       <span className="text-gray-300 text-sm">
                         {project.clientInfo.hires} Hires
                       </span>
@@ -227,14 +228,14 @@ export function WorkShowcase() {
                           {project.clientInfo.activeHires} Active
                         </span>
                       )}
-                    </div>
-                    
+                  </div>
+
                     <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-gray-400" />
+                      <ClockIcon className="w-4 h-4 text-gray-400" />
                       <span className="text-gray-300 text-sm">
                         Member since {project.clientInfo.memberSince}
                       </span>
-                    </div>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -243,7 +244,7 @@ export function WorkShowcase() {
         </div>
 
         {/* Stats bar */}
-        <div className="mt-12 p-8 bg-gradient-to-r from-cyan-500/10 to-blue-600/10 border border-cyan-500/30 rounded-2xl">
+        {/* <div className="mt-12 p-8 bg-gradient-to-r from-cyan-500/10 to-blue-600/10 border border-cyan-500/30 rounded-2xl">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl text-white mb-2">50+</div>
@@ -262,7 +263,7 @@ export function WorkShowcase() {
               <div className="text-gray-400">Happy Clients</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

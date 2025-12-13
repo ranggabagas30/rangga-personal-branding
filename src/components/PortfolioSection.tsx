@@ -1,4 +1,4 @@
-import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLinkIcon, ChevronLeftIcon, ChevronRightIcon } from "./icons/UIcons";
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const projects = [
@@ -39,7 +39,7 @@ export function PortfolioSection() {
               <p className="text-gray-500 text-sm">{project.category}</p>
             </div>
             <div className="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
-              <ExternalLink className="w-4 h-4 text-gray-600" />
+              <ExternalLinkIcon className="w-4 h-4 text-gray-600" />
             </div>
           </div>
         ))}
@@ -47,7 +47,7 @@ export function PortfolioSection() {
 
       <div className="flex items-center justify-center gap-2">
         <button className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-50">
-          <ChevronLeft className="w-4 h-4 text-gray-600" />
+          <ChevronLeftIcon className="w-4 h-4 text-gray-600" />
         </button>
         <div className="flex items-center gap-2">
           <button className="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center">1</button>
@@ -55,7 +55,7 @@ export function PortfolioSection() {
           <button className="w-8 h-8 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-gray-50">3</button>
         </div>
         <button className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-50">
-          <ChevronRight className="w-4 h-4 text-gray-600" />
+          <ChevronRightIcon className="w-4 h-4 text-gray-600" />
         </button>
       </div>
     </div>

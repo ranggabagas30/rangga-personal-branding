@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ExternalLink, Youtube, Smartphone, Globe } from "lucide-react";
+import { ExternalLinkIcon, YoutubeIcon, SmartphoneIcon, SimpleIcon } from "./icons/UIcons";
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface PortfolioItem {
@@ -19,15 +19,15 @@ interface PortfolioItem {
 export function Portfolio() {
   const [activeFilter, setActiveFilter] = useState("All");
   
-  const filters = ["All", "Mobile Apps", "FinTech"];
+  const filters = ["All", "Super-app", "Game"];
   
   const portfolioItems: PortfolioItem[] = [
     {
       title: "CuanX | Super-app (PPOB & Ride-hailing)",
-      category: "FinTech",
+      category: "Super-app",
       image: "/images/portfolio/porto-cuanx.png",
       description: "CuanX is here with practical and innovative solutions for your daily needs. With online motorcycle taxi services, online taxis, and digital product purchases, we help you live your life easier, more comfortable, and more efficient.",
-      role: "React Native Developer",
+      role: "Project Manager & Mobile Engineer",
       tech: ["React Native", "Google Maps API", "Firebase", "Payment Gateway Integration", "Mobile Wallet"],
       websiteUrl: "https://cuanx.co.id/about",
       playStoreUrl: "https://play.google.com/store/apps/details?id=co.id.cuanx.customer&hl=en",
@@ -36,7 +36,7 @@ export function Portfolio() {
     },
     {
       title: "Football Money | Fantasy Sport Game",
-      category: "Mobile Apps",
+      category: "Game",
       image: "/images/portfolio/porto-footballmoney.jpeg",
       description: "Football Money is a virtual trading platform where users can engage in the exciting world of football by trading European footballers like stocks. Player prices fluctuate based on performance and market demand, creating a dynamic and competitive environment.",
       role: "React Native Developer",
@@ -116,7 +116,7 @@ export function Portfolio() {
                       className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-colors"
                       title="Watch on YouTube"
                     >
-                      <Youtube className="w-5 h-5 text-white" />
+                      <YoutubeIcon className="w-5 h-5 text-white" />
                     </a>
                   )}
                   {item.websiteUrl && (
@@ -127,7 +127,7 @@ export function Portfolio() {
                       className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-colors"
                       title="Visit Website"
                     >
-                      <Globe className="w-5 h-5 text-white" />
+                      <SimpleIcon icon="internetarchive" color="FFFFFF" className="w-5 h-5" />
                     </a>
                   )}
                   {(item.appStoreUrl || item.playStoreUrl) && (
@@ -138,7 +138,7 @@ export function Portfolio() {
                       className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-colors"
                       title="View on App Store"
                     >
-                      <Smartphone className="w-5 h-5 text-white" />
+                      <SmartphoneIcon className="w-5 h-5 text-white" />
                     </a>
                   )}
                 </div>
@@ -160,7 +160,7 @@ export function Portfolio() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
                     >
-                      <Globe className="w-3 h-3" />
+                      <SimpleIcon icon="internetarchive" color="FFFFFF" className="w-3 h-3" />
                       Website
                     </a>
                   )}
@@ -171,7 +171,7 @@ export function Portfolio() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
                     >
-                      <Smartphone className="w-3 h-3" />
+                      <SmartphoneIcon className="w-3 h-3" />
                       App Store
                     </a>
                   )}
@@ -182,7 +182,7 @@ export function Portfolio() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
                     >
-                      <Smartphone className="w-3 h-3" />
+                      <SmartphoneIcon className="w-3 h-3" />
                       Google Play
                     </a>
                   )}
@@ -193,7 +193,7 @@ export function Portfolio() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-cyan-400 text-xs hover:border-cyan-500/50 transition-colors"
                     >
-                      <Youtube className="w-3 h-3" />
+                      <YoutubeIcon className="w-3 h-3" />
                       YouTube
                     </a>
                   )}

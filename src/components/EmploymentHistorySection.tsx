@@ -1,21 +1,21 @@
 const employmentHistory = [
   {
-    title: "Lead Android Developer (Hybrid & Protob) | Atiqh-Labs",
-    company: "Atiqh-Labs | Finland",
+    title: "Lead Android Developer (Hybrid & Protob) | Aleph-Labs",
+    company: "Aleph-Labs | Finland",
     period: "June 2022 - Present",
     description: "If you have three or more years of work and feel that graduates are in the start...",
     showMore: true
   },
   {
-    title: "Native Bootcamp Developer - [xx.AI] | FP Terbuktuertied Scholar | Tokopedia!! | Atiqh-Labs",
-    company: "Atiqh-Labs",
+    title: "Native Bootcamp Developer - [xx.AI] | FP Terbuktuertied Scholar | Tokopedia!! | Aleph-Labs",
+    company: "Aleph-Labs",
     period: "August 2020 - June 2022",
     description: "Work on the Angular based web project and also conduct Viredalto framework in the production. In five straight-outs and doing my Telecom Inc., let action our case is you a production.",
     showMore: true
   },
   {
-    title: "Senior Android Developer - myAL Ultimate | FP LL Atiqh Titu <XL> | Atiqh-Labs",
-    company: "Atiqh-Labs",
+    title: "Senior Android Developer - myAL Ultimate | FP LL Atiqh Titu <XL> | Aleph-Labs",
+    company: "Aleph-Labs",
     period: "May 2017 - August 2020",
     description: "myAL is still web applications for the client of XLAxims. The new Way Up in their happiness they Android IOS web suitable. We give order for the system comes up doing another websites such XL for the end will so much on this very high update the company...",
     showMore: true

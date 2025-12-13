@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail, Globe } from "lucide-react";
+import { MailIcon, SimpleIcon } from "./icons/UIcons";
 
 export function Footer() {
   return (
@@ -47,15 +47,15 @@ export function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
-              <a href="#" className="hover:text-gray-300"><Github className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-gray-300"><Linkedin className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-gray-300"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-gray-300"><Mail className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-gray-300"><Globe className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-gray-300"><SimpleIcon icon="github" color="FFFFFF" className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-gray-300"><SimpleIcon icon="linkedin" color="FFFFFF" className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-gray-300"><SimpleIcon icon="x" color="FFFFFF" className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-gray-300"><MailIcon className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-gray-300"><SimpleIcon icon="internetarchive" color="FFFFFF" className="w-5 h-5" /></a>
             </div>
             
             <div className="text-gray-400 text-sm">
-              © 2025 - Senior Mobile Engineer | Rangga B.
+              © 2025 - Senior Mobile Engineer | Rangga Bagas
             </div>
 
             <div className="flex items-center gap-4 text-sm text-gray-400">

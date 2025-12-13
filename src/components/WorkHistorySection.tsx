@@ -1,4 +1,4 @@
-import { Star, ThumbsUp } from "lucide-react";
+import { StarIcon, ThumbsUpIcon } from "./icons/UIcons";
 
 const workHistory = [
   {
@@ -25,7 +25,7 @@ export function WorkHistorySection() {
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-gray-900">Work History</h2>
         <button className="text-green-600 hover:text-green-700">
-          <ThumbsUp className="w-5 h-5" />
+          <ThumbsUpIcon className="w-5 h-5" />
         </button>
       </div>
 
@@ -46,7 +46,7 @@ export function WorkHistorySection() {
             <div className="flex items-center gap-4 mb-3">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-orange-400 text-orange-400" />
+                  <StarIcon key={i} className="w-4 h-4 text-orange-400" filled />
                 ))}
                 <span className="ml-1 text-gray-900">{job.rating}</span>
               </div>
