@@ -21,8 +21,8 @@ export default function App() {
         <Portfolio />
         <Expertise />
         {/* <WorkShowcase />         */}
-        <Journey />
-        <Contact />
+        {/* <Journey /> */}
+        {/* <Contact /> */}
       </main>
     </div>
   );

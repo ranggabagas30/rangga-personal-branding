@@ -38,9 +38,7 @@ export function About() {
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> Mobile</span>
           </h2> */}
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-6">
-            I'm a Senior Mobile Engineer based in Jakarta, Indonesia, specializing in cross-platform 
-            and native mobile development. With over 7 years of experience, I transform complex ideas 
-            into elegant, user-friendly applications that make a difference.
+          I work with a business-first mindset, crafting high-performance mobile applications, used by millions of loyal users, to boost my clients’ revenue.
           </p>
 
           {/* Badge */}
@@ -69,13 +67,13 @@ export function About() {
         </div>
 
         {/* Quick facts */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
           {/* <div className="p-6 bg-gradient-to-br from-slate-900/80 to-slate-800/50 border border-slate-700 rounded-2xl backdrop-blur-sm">
             <div className="text-gray-400 mb-2">Location</div>
             <div className="text-white text-xl">Jakarta, Indonesia 🇮🇩</div>
             <div className="text-gray-500 text-sm mt-1">Available for remote work</div>
           </div> */}
-          <div className="p-6 bg-gradient-to-br from-slate-900/80 to-slate-800/50 border border-slate-700 rounded-2xl backdrop-blur-sm">
+          <div className="w-1/2 mx-auto p-6 bg-gradient-to-br from-slate-900/80 to-slate-800/50 border border-slate-700 rounded-2xl backdrop-blur-sm">
             <div className="text-gray-400 mb-2">Free Consultation</div>
             <div className="text-white text-xl">Yes</div>
             <div className="text-gray-500 text-sm mt-1">Flexible pricing for long-term projects</div>

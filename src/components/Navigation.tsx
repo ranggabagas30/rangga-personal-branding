@@ -9,8 +9,8 @@ export function Navigation() {
     { name: "Expertise", href: "#expertise" },
     { name: "Work", href: "#work" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "Journey", href: "#journey" },
-    { name: "Contact", href: "#contact" }
+    // { name: "Journey", href: "#journey" },
+    // { name: "Contact", href: "#contact" }
   ];
 
   return (

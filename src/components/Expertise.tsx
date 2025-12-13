@@ -73,19 +73,19 @@ export function Expertise() {
     <section id="expertise" className="relative py-16 px-4 sm:px-6 lg:px-8 bg-slate-950/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-slate-800/50 border border-cyan-500/30 rounded-full mb-4">
+          {/* <div className="inline-block px-4 py-2 bg-slate-800/50 border border-cyan-500/30 rounded-full mb-4">
             <span className="text-cyan-400">Expertise</span>
-          </div>
+          </div> */}
           <h2 className="text-4xl sm:text-5xl text-white mb-6">
-            Technical
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> Arsenal</span>
+            Expertise
+            {/* <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> Arsenal</span> */}
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          {/* <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             A comprehensive toolkit for building world-class mobile applications
-          </p>
+          </p> */}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mb-12">
           {skills.map((skill, index) => {
             const Icon = skill.icon;
             return (
@@ -115,7 +115,7 @@ export function Expertise() {
         </div>
 
         {/* Certifications & Education */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-8 bg-gradient-to-br from-slate-900/80 to-slate-800/50 border border-slate-700 rounded-2xl">
             <h3 className="text-white text-2xl mb-6">Certifications</h3>
             <div className="space-y-4">
@@ -154,7 +154,7 @@ export function Expertise() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
