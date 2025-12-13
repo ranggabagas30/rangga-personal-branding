@@ -21,8 +21,8 @@ export function Hero() {
               </span>
             </h1>
             {/* Tech stack icons */}
-            <div className="flex flex-wrap justify-center gap-1">
-              <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg backdrop-blur-sm border border-border">
+            <div className="flex flex-wrap justify-center gap-1 px-4 py-3 rounded-2xl bg-gray-200/40 dark:bg-gray-800/40 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-black/20">
+              <div className="flex items-center gap-2 px-4 py-2 bg-transparent rounded-lg">
                 <img 
                   src="https://cdn.simpleicons.org/react/61DAFB" 
                   alt="React Native" 
@@ -30,7 +30,7 @@ export function Hero() {
                 />
                 <span className="text-muted-foreground">React Native</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg backdrop-blur-sm border border-border">
+              <div className="flex items-center gap-2 px-4 py-2 bg-transparent rounded-lg">
                 <img 
                   src="https://cdn.simpleicons.org/flutter/02569B" 
                   alt="Flutter" 
@@ -38,7 +38,7 @@ export function Hero() {
                 />
                 <span className="text-muted-foreground">Flutter</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg backdrop-blur-sm border border-border">
+              <div className="flex items-center gap-2 px-4 py-2 bg-transparent rounded-lg">
                 <img 
                   src="https://cdn.simpleicons.org/android/3DDC84" 
                   alt="Android" 
@@ -46,7 +46,7 @@ export function Hero() {
                 />
                 <span className="text-muted-foreground">Android</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg backdrop-blur-sm border border-border">
+              <div className="flex items-center gap-2 px-4 py-2 bg-transparent rounded-lg">
                 <img 
                   src="https://cdn.simpleicons.org/apple/FFFFFF" 
                   alt="iOS" 
