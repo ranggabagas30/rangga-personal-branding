@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { Switch } from "./ui/switch";
 import { SunIcon, MoonIcon } from "./icons/UIcons";
+import { cn } from "./ui/utils";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -15,14 +15,20 @@ export function ThemeToggle() {
   // Don't render until mounted to avoid hydration mismatch
   if (!mounted) {
     return (
-      <div className="flex items-center gap-2">
-        <SunIcon className="w-5 h-5 text-muted-foreground" />
-        <Switch
-          checked={false}
-          disabled
-          aria-label="Toggle theme"
-        />
-      </div>
+      <button
+        type="button"
+        disabled
+        className="relative inline-flex h-8 w-14 items-center rounded-full bg-[var(--color-switch-background)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+        aria-label="Toggle theme"
+      >
+        <div className="absolute left-1 z-10 flex h-6 w-6 items-center justify-center">
+          <SunIcon className="h-4 w-4 text-muted-foreground" />
+        </div>
+        <div className="absolute right-1 z-10 flex h-6 w-6 items-center justify-center">
+          <MoonIcon className="h-4 w-4 text-muted-foreground opacity-50" />
+        </div>
+        <div className="absolute left-0.5 h-6 w-6 rounded-full bg-card shadow-sm" />
+      </button>
     );
   }
 
@@ -30,20 +36,50 @@ export function ThemeToggle() {
   const isDark = theme === "dark";
   const currentTheme = theme || "light";
 
+  const toggleTheme = () => {
+    setTheme(isDark ? "light" : "dark");
+  };
+
   return (
-    <div className="flex items-center gap-2">
-      {isDark ? (
-        <MoonIcon className="w-5 h-5 text-muted-foreground" />
-      ) : (
-        <SunIcon className="w-5 h-5 text-muted-foreground" />
+    <button
+      type="button"
+      onClick={toggleTheme}
+      className={cn(
+        "relative inline-flex h-8 w-14 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 cursor-pointer",
+        isDark
+          ? "bg-primary"
+          : "bg-[var(--color-switch-background)]"
       )}
-      <Switch
-        checked={isDark}
-        onCheckedChange={(checked) => {
-          setTheme(checked ? "dark" : "light");
-        }}
-        aria-label={`Toggle theme. Current theme: ${currentTheme}`}
+      aria-label={`Toggle theme. Current theme: ${currentTheme}`}
+    >
+      {/* Sun Icon - always visible on left */}
+      <div className="absolute left-1 z-10 flex h-6 w-6 items-center justify-center">
+        <SunIcon
+          className={cn(
+            "h-4 w-4 transition-colors duration-200",
+            isDark ? "text-primary-foreground opacity-50" : "text-foreground"
+          )}
+        />
+      </div>
+
+      {/* Moon Icon - always visible on right */}
+      <div className="absolute right-1 z-10 flex h-6 w-6 items-center justify-center">
+        <MoonIcon
+          className={cn(
+            "h-4 w-4 transition-colors duration-200",
+            isDark ? "text-primary-foreground" : "text-muted-foreground opacity-50"
+          )}
+        />
+      </div>
+
+      {/* Sliding thumb that moves between icons */}
+      <div
+        className={cn(
+          "absolute h-6 w-6 rounded-full bg-card shadow-sm transition-transform duration-200 ease-in-out",
+          isDark ? "translate-x-[calc(3.5rem-1.5rem-0.25rem)]" : "translate-x-0.5"
+        )}
+        aria-hidden="true"
       />
-    </div>
+    </button>
   );
 }
