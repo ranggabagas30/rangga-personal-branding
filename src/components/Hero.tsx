@@ -1,6 +1,12 @@
+import React from "react";
+import { useTheme } from "next-themes";
 import { ArrowDownIcon, SparklesIcon } from "./icons/UIcons";
 
 export function Hero() {
+  const { theme } = useTheme();
+  // Default to light theme if theme is undefined
+  const isDark = theme === "dark";
+  const appleIconColor = isDark ? "FFFFFF" : "000000";
   return (
     <section className="relative mb-16 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       {/* Gradient orbs */}
@@ -48,7 +54,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-transparent rounded-lg">
                 <img 
-                  src="https://cdn.simpleicons.org/apple/FFFFFF" 
+                  src={`https://cdn.simpleicons.org/apple/${appleIconColor}`}
                   alt="iOS" 
                   className="w-5 h-5"
                 />
