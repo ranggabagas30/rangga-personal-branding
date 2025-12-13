@@ -48,7 +48,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/30 rounded-lg backdrop-blur-sm border border-slate-700/50">
                 <img 
-                  src="https://cdn.simpleicons.org/apple/000000" 
+                  src="https://cdn.simpleicons.org/apple/FFFFFF" 
                   alt="iOS" 
                   className="w-5 h-5"
                 />
